@@ -1,283 +1,277 @@
 /* General Styling */
 body {
-  font-family: ,  sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total size */
+    background-color: #f4f7f6; /* Light background for the whole page */
+    color: #333; /* Default text color */
 }
 
+/* Logo Styling */
 .logo {
-  margin: 0px 15px 15px 10px;
-  background-color: rgb(246, 244, 244);
-  padding: 800px auto;
-  
+    margin: 10px 15px; /* Spacing around the logo */
+    background-color: rgb(246, 244, 244); /* Light background for the logo area */
+    padding: 10px; /* Small internal padding */
+    max-width: 200px; /* Maximum width for the logo image/element */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures it acts as a block element for margin centering */
 }
 
-/* Main Container */
+/* Main Container for Learner Performance */
 .learner-performance {
-  display: flex;
-  flex-direction: column;
-  height: 540px;
-  align-items: center;
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    min-height: 540px; /* Ensures a minimum height, but allows content to expand */
+    padding: 20px 0; /* Vertical padding */
+    background-color: #ffffff; /* White background for the main content area */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+    margin: 20px auto; /* Center the container itself with some margin */
+    max-width: 1200px; /* Max width for the main content block */
+    border-radius: 10px; /* Slightly rounded corners for the container */
 }
 
 /* Table Title Styling */
 .table-title {
-  font-size: 1.1rem;
-  margin-top: -140px;
-  color: #042c5fcd;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 3px rgba(21, 52, 73, 0.2);
-  
-  
+    font-size: 2rem; /* Prominent font size for the title */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #0d47a1; /* A deep, rich blue */
+    font-weight: 700; /* Bolder */
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Soft text shadow */
+    letter-spacing: 1.5px; /* Spaced out letters for elegance */
 }
 
-/* Table Container */
+/* Table Container (wraps the tables) */
 .table-container {
-  width: 100%;
-  max-width: 11000px;
-  min-width: 10px;
-  border-radius: 8px;
-  overflow-x: hidden;
-  padding: 150px;
-  align-items: center;
-  
+    width: 95%; /* Responsive width */
+    max-width: 1100px; /* Maximum width on larger screens */
+    border-radius: 8px;
+    overflow-x: auto; /* Enables horizontal scrolling for tables on small screens */
+    padding: 15px; /* Internal padding for the container */
+    display: flex;
+    justify-content: center; /* Center the tables within this container */
 }
+
+/* Custom Table Styling (Unified for both types of tables) */
 .custom-table {
-  width: 68.5vw;
-  height: auto;
-  background-color: #ffffff;
-  border-collapse: collapse;
-  text-align: center;
-  margin: 20px auto;
-  font-size: 1.2rem;
-  overflow: hidden;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 1px;
-  
+    width: 100%; /* Table takes full width of its container */
+    background-color: #ffffff;
+    border-collapse: collapse; /* Removes spacing between borders */
+    text-align: center;
+    margin: 20px 0; /* Vertical margin for tables */
+    font-size: 0.95rem; /* Slightly smaller base font for table content */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Clearer shadow */
+    border-radius: 8px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensures rounded corners are applied to content */
 }
 
-.custom-table1 {
-  width: 68.5vw;
-  height: auto;
-  background-color: #ffffff;
-  border-collapse: collapse;
-  text-align: center;
-  margin: 20px auto;
-  font-size: 1.2rem;
-  overflow: hidden;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 1px;
-  
-}
-
+/* Table Header Cells */
 .custom-table th {
-  background-color: #261eff;
-  color: white;
-  font-weight: bold;
-  padding: 10px;
-  text-transform: uppercase;
+    background-color: #1976d2; /* Primary blue for headers */
+    color: white;
+    font-weight: 600; /* Semi-bold headers */
+    padding: 12px 10px; /* Comfortable padding */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid #1565c0; /* Slightly darker border for headers */
 }
 
+/* Table Data Cells */
 .custom-table td {
-  padding: 10px;
-  text-transform: uppercase;
-  background-color: #f1f3da;
-  font-weight: bold;
-  
-}
-.custom-table1 th {
-  background-color: rgb(30, 30, 121);;
-  color: white;
-  padding: 10px;
-  text-transform: uppercase;
-  border-collapse: collapse;
-  padding: 10px;
-}
-
-.custom-table1 td {
-  padding: 10px;
-  text-transform: uppercase;
-  background-color: #f1f3da;
-  text-align: center;
-  
-  
-}
-
-
-.custom-table th,
-.custom-table td {
-  padding: 6px 12px;
-  border: 1px solid rgb(30, 30, 121);
-  overflow-x: auto;
-  font-size: 0.7rem;
-}  
-  .custom-table1 th,
-  .custom-table1 td {
-    padding: 6px 12px;
-    border: .9px solid rgb(30, 30, 121);
-    overflow-x: auto;
-    font-size: 0.7rem;
-   
-
-}
-
-.custom-table tbody tr:nth-child(even) {
-  background-color: #0b0000c2;
-   
-}
-
-.custom-table tbody tr:nth-child(odd) {
-  background-color: #ffffff;
-  
-  
-}
-
-.custom-table tbody tr:hover {
-  background-color: #f7f8f2;
-  
-  }
-
-/* Responsive Design */
-@media (max-width: 800px) {
-  .table-container {
     padding: 10px;
-    
-    
-  }
+    text-transform: capitalize; /* Capitalize each word, more natural than uppercase */
+    background-color: #fdfdfd; /* Very light background for cells */
+    font-weight: 500; /* Medium font weight */
+    color: #444; /* Darker grey text for readability */
+    border: 1px solid #eee; /* Light grey border for cells */
+}
 
-  .custom-table th,
-  .custom-table td {
-    padding: 8px;
-    font-size: 0.9rem;  
-  }
+/* Modifier class for a different header color (like your original custom-table1) */
+.custom-table.dark-blue-header th {
+    background-color: #0d47a1; /* Darker blue header */
+    border: 1px solid #0a3d8f;
+}
 
-  .custom-table1 th,
-  .custom-table1 td {
-    padding: 8px;
-    font-size: 0.9rem;
-    
-    
-  }
+/* Alternating Row Colors for improved readability */
+.custom-table tbody tr:nth-child(even) td {
+    background-color: #f1f5f9; /* A very light, subtle blue-gray for even rows */
+}
 
+.custom-table tbody tr:nth-child(odd) td {
+    background-color: #ffffff; /* White for odd rows */
+}
 
-  
+/* Hover Effect for Table Rows */
+.custom-table tbody tr:hover td {
+    background-color: #e3f2fd; /* Light blue on hover */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 800px) {
+    .learner-performance {
+        margin: 10px auto;
+        padding: 15px 0;
+    }
+
+    .table-title {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .table-container {
+        padding: 10px;
+        width: 98%;
+    }
+
+    .custom-table {
+        font-size: 0.8rem; /* Smaller font for mobile */
+    }
+
+    .custom-table th,
+    .custom-table td {
+        padding: 6px; /* Reduced padding for mobile */
+    }
 }
 
 /* Print Styles */
 @media print {
-  /* Hide the logo when printing */
-  .logo {
-    display:flex;
-    flex-direction: column;
-    margin-top: 540px;
-    
-  }
+    body {
+        margin: 0;
+        padding: 0;
+        -webkit-print-color-adjust: exact; /* Ensures background colors print */
+        print-color-adjust: exact;
+        font-size: 12pt; /* Standard font size for print */
+    }
 
-  /* Reduce padding and margin for the table container */
-  .table-container {
-    padding: 20px;
-    max-width: 100%;
-    margin: 0;
-       
-  }
-  /* Ensure the table fits nicely on the page */
-  .custom-table {
-    width: 100% !important; /* Use full width of the page */
-    margin: 0;
-    box-shadow: none; /* Remove shadow for printing */
-    border-radius: 0; /* Remove rounded corners for printing */
-  }
-  .custom-table1 {
-    width: 100% !important; /* Use full width of the page */
-    margin: 0;
-    box-shadow: none; /* Remove shadow for printing */
-    border-radius: 0; /* Remove rounded corners for printing */
-        
-  }
+    /* Hide non-essential elements for printing */
+    .logo, .print-button {
+        display: none;
+    }
 
-  /* Adjust table cell padding for printing */
-  .custom-table th,
-  .custom-table td {
-    padding: 8px;
-    font-size: 1rem;
-           
-  }
+    /* Adjust main container for print */
+    .learner-performance {
+        margin: 0;
+        padding: 10px;
+        box-shadow: none;
+        border-radius: 0;
+        min-height: unset; /* Remove min-height for print */
+        background-color: white; /* Ensure white background */
+    }
 
-  /* Adjust title font size for printing */
-  .table-title {
-    font-size: 1.7rem;
-    margin-top: 10px;
-    
-    
-  }
+    /* Table container for print */
+    .table-container {
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+        overflow-x: visible; /* No scrollbar on print */
+        display: block; /* Revert to block display for print flow */
+    }
 
-  /* Add page breaks if necessary */
-  body {
-    page-break-before: always;
-  }
+    /* Custom tables for print */
+    .custom-table {
+        width: 100% !important; /* Force full width */
+        margin: 10px 0;
+        box-shadow: none;
+        border-radius: 0;
+        page-break-inside: avoid; /* Avoid breaking tables across pages if possible */
+        border: 1px solid #ccc; /* Add a light border for print definition */
+    }
 
-  /* Ensure that content does not overlap and everything fits on the page */
-  .learner-performance {
-    height: auto;
-    
-    
-  }
+    .custom-table th,
+    .custom-table td {
+        padding: 5px 8px; /* Compact padding for print */
+        font-size: 0.75rem; /* Suitable font size for print */
+        border: 1px solid #ddd; /* Light border for cells on print */
+        background-color: white !important; /* Ensure white background for all cells on print */
+        color: black !important; /* Ensure black text for readability on print */
+        text-transform: none !important; /* Remove uppercase for print, more natural */
+    }
+
+    /* Print specific header colors */
+    .custom-table th {
+        background-color: #e0e0e0 !important; /* Light grey header for print */
+        color: black !important;
+    }
+
+    /* Title for print */
+    .table-title {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        color: black;
+        text-shadow: none;
+    }
+
+    /* Page breaks for large content */
+    tr {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
 }
-/* App.css */
 
-/* Print Button Styling */
+/* Print Button Styling (Assuming this is a separate button, not part of the content to print) */
 .print-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+    position: fixed; /* Fixed position so it stays visible */
+    top: 20px;
+    right: 20px;
+    padding: 12px 25px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745; /* Green for print button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000; /* Ensure it's on top of other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .print-button:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
 }
 
 .print-button:active {
-  background-color: #004085;
-  transform: scale(0.95);
+    background-color: #1e7e34;
+    transform: translateY(0); /* Return to original position */
 }
 
 .print-button:focus {
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5); /* Green outline on focus */
 }
 
-/* Content to Print */
+/* Content to Print (if you have a specific container to print) */
 .print-content {
-  width: 100%;
-  max-width: 800px; /* Limits the width to fit on a standard page */
-  margin: auto;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* These styles apply to a specific div you might wrap your printable content in */
+    width: 100%;
+    max-width: 850px; /* Limits the width to fit on a standard page for on-screen preview */
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
 }
 
-/* Styling for Headers and Content */
 .print-header {
-  text-align: center;
-  margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: #1a237e;
+    font-weight: 700;
 }
 
 .print-body {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
 }
