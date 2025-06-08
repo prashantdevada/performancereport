@@ -61,8 +61,7 @@ const LearnerPerformance = () => {
               <th>Phy</th>
               <th>Chem</th>
               <th>Math</th>
-              <th>Bot</th>
-              <th>Zoo</th>
+              <th>Bio</th>
               <th>Total</th>
               <th>%Age</th>
               <th>Rank</th>
