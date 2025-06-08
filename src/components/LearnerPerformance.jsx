@@ -75,7 +75,7 @@ const LearnerPerformance = () => {
                 <td>{learner['TestName']}</td>
                 <td>{learner.Phy}</td>
                 <td>{learner.Chem}</td>
-                <td>{learner.Math/Bio}</td>
+                <td>{learner.['Math/Bio']}</td>
                 <td>{learner.Total}</td>
                 <td>{learner['%AGE']}</td>
                 <td>{learner.Rank}</td>
